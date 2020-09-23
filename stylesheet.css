@@ -31,13 +31,70 @@ header a {
   color: black;
   padding-right: 20px;
 }
-.container {
+/* header h1 {
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+} */
+
+header h1 {
+  animation: type 3s steps(13);
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10vw;
+  margin-top: auto;
+  text-align: center;
 }
-.container p {
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 13ch;
+  }
+}
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+*/
+
+
+/* stylesheet.css | file:///Users/user/Desktop/freecodecamp/portfolio/stylesheet.css */
+
+header h1 {
+  /* height: 10vh; */
+  /* margin-top: \\; */
+  font-size: 20vh;
+  margin-top: auto;
+}
+
+/* .container p {
   font-size: 9em;
   font-weight: bold;
   letter-spacing: 0.1rem;
@@ -75,4 +132,4 @@ header a {
   100% {
     background-color: #ccc;
   }
-}
+} */
