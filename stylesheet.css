@@ -36,10 +36,15 @@ h1 {
   animation: type 3s steps(13);
   overflow: hidden;
   white-space: nowrap;
-  font-size: 40px;
   /* font-family: consolas; */
   border-right: 4px solid black;
   margin-left: 10px;
+  font-size: 4.4vw;
+}
+
+#name {
+  font-family: "Yellowtail", cursive;
+  color: rgb(160, 138, 191);
 }
 
 @keyframes type {
@@ -57,9 +62,20 @@ h1 {
 #portrait {
   height: 88vh;
   width: auto;
-  margin: 10px auto 10px auto;
+  margin: 10px 5vw 10px auto;
 }
 .main-body {
   display: flex;
   flex-direction: row;
+}
+
+#info {
+  margin-top: 25vh;
+  margin-right: 2vw;
+  display: inline-block;
+}
+
+.info-icon {
+  margin-right: 1vw;
+  margin-top: 1vh;
 }
