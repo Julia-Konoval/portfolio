@@ -7,18 +7,18 @@ body {
   display: flex;
   flex-direction: column;
 }
-header img {
-  width: 30%;
-  margin: 20px auto auto 30vw;
-  height: 40;
-}
-header {
-  font-family: "PT Serif", serif;
+body {
+  border: 25px solid rgb(160, 138, 191);
+  height: 100vh;
+  width: 98.4vw;
 }
 
-#menu-img {
-  background-color: black;
+header {
+  font-family: "PT Serif", serif;
+  display: flex;
+  flex-direction: row;
 }
+
 #nav-bar {
   text-decoration: none;
   text-align: center;
@@ -31,20 +31,15 @@ header a {
   color: black;
   padding-right: 20px;
 }
-/* header h1 {
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
-header h1 {
+h1 {
   animation: type 3s steps(13);
   overflow: hidden;
   white-space: nowrap;
-  font-size: 10vw;
-  margin-top: auto;
-  text-align: center;
+  font-size: 40px;
+  /* font-family: consolas; */
+  border-right: 4px solid black;
+  margin-left: 10px;
 }
 
 @keyframes type {
@@ -55,81 +50,16 @@ header h1 {
     width: 13ch;
   }
 }
-.cursor {
-  display: inline-block;
-  width: 3px;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  animation: blink 1s infinite;
-}
-.cursor.typing {
-  animation: none;
-}
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
-}
-*/
-
-
-/* stylesheet.css | file:///Users/user/Desktop/freecodecamp/portfolio/stylesheet.css */
-
-header h1 {
-  /* height: 10vh; */
-  /* margin-top: \\; */
-  font-size: 20vh;
-  margin-top: auto;
+.main-body {
+  background-color: rgba(233, 232, 222, 0.904);
 }
 
-/* .container p {
-  font-size: 9em;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden;
-  padding: 0.5rem;
+#portrait {
+  height: 88vh;
+  width: auto;
+  margin: 10px auto 10px auto;
 }
-.typed-text {
-  font-weight: normal;
-  color: orange;
+.main-body {
+  display: flex;
+  flex-direction: row;
 }
-.cursor {
-  display: inline-block;
-  width: 3px;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  animation: blink 1s infinite;
-}
-.cursor.typing {
-  animation: none;
-}
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
-} */
