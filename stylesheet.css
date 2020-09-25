@@ -17,6 +17,7 @@ header {
   font-family: "PT Serif", serif;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #nav-bar {
@@ -64,12 +65,18 @@ h1 {
   background-color: rgba(233, 232, 222, 0.904);
 }
 #menu-img {
-  justify-content: center;
+  /* justify-content: center; */
+  margin-left: -2vw;
+  justify-self: self-end;
+  display: flex;
 }
 #portrait {
-  height: 88vh;
+  height: 94vh;
   width: auto;
-  margin: 10px 5vw 10px auto;
+  /* margin: 10px 5vw 10px auto; */
+  padding-right: 4vw;
+  padding-top: 2vh;
+  margin-left: 12vw;
 }
 .main-body {
   display: flex;
@@ -77,35 +84,23 @@ h1 {
 }
 
 #info {
-  margin-top: 25vh;
   margin-right: 2vw;
   display: inline-block;
+  padding: 10px;
 }
 
 .info-icon {
   margin-right: 1vw;
   margin-top: 1vh;
+  width: 2vw;
 }
 
 #initials {
   padding: 10px;
   display: flex;
   flex-direction: column;
-
   text-shadow: lavender 0px 0px 5px, lavender 0px 0px 10px,
     lavender 0px 0px 15px;
-}
-
-/* stylesheet.css | file:///Users/user/Desktop/freecodecamp/portfolio/stylesheet.css */
-
-#menu-img {
-  /* justify-content: center; */
-  justify-self: self-end;
-  display: flex;
-}
-
-#portrait {
-  /* margin: 10px 5vw 10px auto; */
-  padding-left: 4vw;
-  padding-right: 4vw;
+  margin-left: -5vw;
+  padding-right: 25px;
 }
