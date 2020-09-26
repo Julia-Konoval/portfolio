@@ -18,6 +18,10 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* background-image: url("images/header-img.JPG");
+  background-repeat: no-repeat;
+  /* background-size: 93vh; */
+  /* background-position: center;  */
 }
 
 #nav-bar {
