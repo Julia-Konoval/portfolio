@@ -31,6 +31,7 @@ header a {
   text-decoration: none;
   color: black;
   padding-right: 20px;
+  padding: 30px;
 }
 
 h1 {
@@ -104,3 +105,86 @@ h1 {
   margin-left: -5vw;
   padding-right: 25px;
 }
+.sidebar {
+  display: none;
+  z-index: 1;
+  top: 0;
+  margin-top: 2vh;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 350px;
+  height: calc(100% - 4%);
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+  background: rgba(110, 110, 110, 0.897);
+}
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .profile_info .profile_image {
+  width: 80px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4 {
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 70px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover {
+  background: rgb(160, 138, 191);
+}
+
+.sidebar i {
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+label #sidebar_btn {
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 300px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover {
+  color: rgb(160, 138, 191);
+}
+
+/* #nav-bar {
+  display: flex;
+  flex-direction: column;
+  text-align: inherit;
+  margin-top: 15vh;
+  align-self: auto;
+  width: 20vw;
+  margin-left: -120px;
+  height: 10vh;
+  color: silver;
+  background: rgba(160, 138, 191, 0.5);
+} */

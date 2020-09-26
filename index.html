@@ -14,13 +14,43 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+    
+
       <div id="info">
-        <img class="info-icon" src="images/read-more.png" alt="See more info">
+        <img class="info-icon" id="details" src="images/read-more.png" alt="See more info">
+
         <img class="info-icon" src="images/phone-call.png" alt="Call me">
         </div>
+
+        <!-- <nav id="nav-bar">
+          <a href="#">Portfolio</a>
+          <a href="#">Resume</a>
+          <a href="#">About me</a>
+          <a href="#">Contact</a>
+        </nav> -->
+
+       <!--sidebar start-->
+    <div class="sidebar">
+      <a href="#"><i class="far fa-times-circle"></i></a>
+      <div class="profile_info">
+        <img src="images/sidebar-img.jpeg" class="profile_image" alt="profile_image">
+        <h4>Portfolio</h4>
+      </div>
+      <a href="#"><i class="fas fa-address-card"></i><span>About me</span></a>
+      <a href="#"><i class="fas fa-th"></i><span>Projects</span></a>
+      <a href="#"><i class="fas fa-desktop"></i><span>Education & Experience</span></a>
+      <a href="#"><i class="fas fa-sliders-h"></i><span>Skills</span></a>
+      <a href="#"><i class="fas fa-table"></i><span>Contact me</span></a>
+    </div>
+    <!--sidebar end-->
 
       <div id="menu-img">
         <img id="portrait" src="images/header-img.JPG" alt="portrait" />
@@ -35,22 +65,18 @@
             <source src="typing.m4a" type="audio/mp3" />
           </audio>
         </div>
-      
-      
+      </header>
 
-    </header>
-    <div class="main-body"></div>
-    <!-- <nav id="nav-bar">
-          <a href="#">Portfolio</a>
-          <a href="#">Resume</a>
-          <a href="#">About me</a>
-          <a href="#">Contact</a>
-        </nav> -->
+      <div class="main-body">
 
-      
+      </div>
     </div>
 
     <footer></footer>
-    <script src="main.js"></script>
+    <script src="main.js">   
+    </script>
   </body>
 </html>
+
+
+    
