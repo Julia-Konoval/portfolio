@@ -8,7 +8,7 @@ body {
   flex-direction: column;
 }
 body {
-  border: 25px solid rgb(160, 138, 191);
+  border: 25px solid rgb(159, 141, 185);
   height: 100vh;
   width: 98.4vw;
 }
@@ -18,10 +18,11 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-image: url("images/header-img.JPG");
+  background-image: url("images/header-img.JPG");
   background-repeat: no-repeat;
-  /* background-size: 93vh; */
-  /* background-position: center;  */
+  background-size: 93vh;
+  background-position: center;
+  height: 93vh;
 }
 
 #nav-bar {
@@ -69,35 +70,36 @@ h1 {
 .main-body {
   background-color: rgba(233, 232, 222, 0.904);
 }
-#menu-img {
-  /* justify-content: center; */
+/* #menu-img {
   margin-left: -2vw;
   justify-self: self-end;
   display: flex;
-}
-#portrait {
+} */
+/* #portrait {
   height: 94vh;
   width: auto;
-  /* margin: 10px 5vw 10px auto; */
   padding-right: 4vw;
   padding-top: 2vh;
   margin-left: 12vw;
-}
+} */
 .main-body {
   display: flex;
   flex-direction: row;
 }
 
 #info {
-  margin-right: 2vw;
+  /* margin-right: 2vw; */
   display: inline-block;
   padding: 10px;
+  align-content: stretch;
+  margin-left: -35vw;
 }
 
 .info-icon {
   margin-right: 1vw;
   margin-top: 1vh;
   width: 2vw;
+  align-self: baseline;
 }
 
 #initials {
@@ -113,12 +115,12 @@ h1 {
   display: none;
   z-index: 1;
   top: 0;
-  margin-top: 2vh;
+  margin-top: 2.4vh;
   padding-top: 30px;
   position: fixed;
   left: 0;
   width: 350px;
-  height: calc(100% - 4%);
+  height: calc(100% - 4.6%);
   transition: 0.5s;
   transition-property: left;
   overflow-y: auto;
@@ -175,7 +177,9 @@ label #sidebar_btn {
   transition: 0.5s;
   transition-property: color;
 }
-
+/* #closing-tag:hover {
+  height: 100px;
+} */
 label #sidebar_btn:hover {
   color: rgb(160, 138, 191);
 }

@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 const detailsButton = document.querySelector("#details");
 const sideBar = document.querySelector(".sidebar");
-const closingTag = document.querySelector(".far fa-times-circle");
+const closingTag = document.querySelector("#closing-tag");
 
 detailsButton.addEventListener("click", () => {
   sideBar.style.display = "block";
