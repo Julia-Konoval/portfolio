@@ -112,6 +112,7 @@ h1 {
   padding-right: 25px;
   position: absolute;
   right: 10%;
+  height: 100vh;
 }
 .sidebar {
   display: none;
@@ -187,7 +188,36 @@ label #sidebar_btn {
 label #sidebar_btn:hover {
   color: #7c677f;
 }
+.header-hover-img p {
+  color: white; /* Fallback: assume this color ON TOP of image */
+  background: url(images/font-background.JPG) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 150px;
+  text-align: center;
+  margin-top: -170px;
+  font-family: "Abril Fatface", cursive;
+}
 
+.header-hover-img {
+  display: none;
+  /* background-color: #766279; */
+  /* opacity: 0.5; */
+  justify-content: inherit;
+  align-self: center;
+  height: 80vh;
+  width: 30vw;
+  /* background-color: rgba(64, 33, 68, 0.747); */
+  background-color: rgba(82, 42, 4, 0.473);
+}
+.header-hover-img:hover #description {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
 /* #nav-bar {
   display: flex;
   flex-direction: column;
@@ -200,3 +230,91 @@ label #sidebar_btn:hover {
   color: silver;
   background: rgba(160, 138, 191, 0.5);
 } */
+.center-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.round {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+}
+
+#cta {
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+#cta .arrow {
+  left: 30%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0px;
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  top: 26px;
+}
+.segunda {
+  margin-left: 8px;
+}
+.next {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(20px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    transform: translateX(-20px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.arrow.primera.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.round:hover .arrow {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.round:hover .arrow.primera {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
