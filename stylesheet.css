@@ -8,7 +8,7 @@ body {
   flex-direction: column;
 }
 body {
-  border: 25px solid rgb(159, 141, 185);
+  border: 25px solid #7c677f;
   height: 100vh;
   width: 98.4vw;
 }
@@ -49,7 +49,7 @@ h1 {
   font-size: 4vw;
   padding: 0;
   margin-top: -4.4vh;
-  color: rgb(160, 138, 191);
+  color: #7c677f;
 }
 
 #name {
@@ -64,7 +64,7 @@ h1 {
     width: 0ch;
   }
   100% {
-    width: 13ch;
+    width: 9ch;
   }
 }
 .main-body {
@@ -92,7 +92,7 @@ h1 {
   display: inline-block;
   padding: 10px;
   align-content: stretch;
-  margin-left: -35vw;
+  /* margin-left: -35vw; */
 }
 
 .info-icon {
@@ -110,21 +110,24 @@ h1 {
     lavender 0px 0px 15px;
   margin-left: -5vw;
   padding-right: 25px;
+  position: absolute;
+  right: 10%;
 }
 .sidebar {
   display: none;
   z-index: 1;
   top: 0;
-  margin-top: 2.4vh;
+  /* margin-top: 2.4vh; */
   padding-top: 30px;
   position: fixed;
   left: 0;
   width: 350px;
-  height: calc(100% - 4.6%);
+  height: 100%;
+  /* height: calc(100% - 4.6%); */
   transition: 0.5s;
   transition-property: left;
   overflow-y: auto;
-  background: rgba(110, 110, 110, 0.897);
+  background: rgba(82, 42, 4, 0.473);
 }
 .profile_info {
   display: flex;
@@ -133,16 +136,17 @@ h1 {
   align-items: center;
 }
 .sidebar .profile_info .profile_image {
-  width: 80px;
-  height: 100px;
   border-radius: 100px;
   margin-bottom: 10px;
+  width: 90px;
+  height: 130px;
 }
 
 .sidebar .profile_info h4 {
-  color: #ccc;
+  /* color: #7c677f; */
   margin-top: 0;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .sidebar a {
@@ -154,11 +158,11 @@ h1 {
   padding-left: 40px;
   box-sizing: border-box;
   transition: 0.5s;
-  transition-property: background;
+  /* transition-property: background; */
 }
 
 .sidebar a:hover {
-  background: rgb(160, 138, 191);
+  background: #7c677f;
 }
 
 .sidebar i {
@@ -168,7 +172,7 @@ h1 {
 
 label #sidebar_btn {
   z-index: 1;
-  color: #fff;
+  color: #7c677f;
   position: fixed;
   cursor: pointer;
   left: 300px;
@@ -177,11 +181,11 @@ label #sidebar_btn {
   transition: 0.5s;
   transition-property: color;
 }
-/* #closing-tag:hover {
-  height: 100px;
-} */
+#closing-tag {
+  font-size: 40px;
+}
 label #sidebar_btn:hover {
-  color: rgb(160, 138, 191);
+  color: #7c677f;
 }
 
 /* #nav-bar {
