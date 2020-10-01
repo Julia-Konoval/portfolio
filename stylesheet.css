@@ -578,8 +578,13 @@ hr {
   flex: 1;
 }
 
+#image1 {
+  width: 400px;
+}
+
 .project-description {
   flex: 1;
+  margin-top: 0;
 }
 
 .project-description h2 {
