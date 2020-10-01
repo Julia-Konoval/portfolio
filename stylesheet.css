@@ -577,11 +577,14 @@ hr {
 .project-img {
   flex: 1;
 }
-
-#image1 {
-  width: 400px;
+.project-img img {
+  width: 24vw;
 }
-
+/* #library-img {
+  width: ;
+} */
+#calculator-img {
+}
 .project-description {
   flex: 1;
   margin-top: 0;
