@@ -89,6 +89,7 @@ h1 {
 .info-icon:hover {
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 #initials {
   padding: 10px;
