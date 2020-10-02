@@ -468,6 +468,7 @@ label #sidebar_btn:hover {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
+  margin: 1.45rem;
 }
 
 .about-text-box h2 {
@@ -580,10 +581,9 @@ hr {
 }
 .project-img img {
   width: 24vw;
+  margin: 1.47rem;
 }
-/* #library-img {
-  width: ;
-} */
+
 #calculator-img {
 }
 .project-description {
