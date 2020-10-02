@@ -574,6 +574,7 @@ hr {
   align-items: center;
   justify-content: center;
   margin: 0 1.45rem 5rem 1.45rem;
+  background-color: #cecbda;
 }
 
 .project-img {
@@ -582,15 +583,27 @@ hr {
 .project-img img {
   width: 24vw;
   margin: 1.47rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-
-#calculator-img {
+.project-img img:hover {
+  border: 2px solid #7c677f;
+  background-color: #f6e5e4;
+  -webkit-box-shadow: -16px -16px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -16px -16px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -16px -16px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .project-description {
   flex: 1;
   margin-top: 0;
+  background-color: rgba(206, 203, 218, 0.5);
+  padding: 10px;
 }
-
+.project-description:hover {
+  background-color: rgba(124, 103, 127, 0.5);
+  color: #f6e5e4;
+}
 .project-description h2 {
   font-size: 2rem;
   margin: 2rem 0;
