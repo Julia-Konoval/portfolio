@@ -48,3 +48,8 @@ $("#initials").hover(
     hoverHeaderPart.style.display = "none";
   }
 );
+AOS.init({
+  easing: "ease",
+  duration: 1800,
+  once: true,
+});
