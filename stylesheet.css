@@ -7,6 +7,9 @@ body {
   flex-direction: column;
   margin-top: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100vw;
 }
@@ -50,8 +53,11 @@ h1 {
   padding: 0;
   margin-top: -4.4vh;
   color: #7c677f;
+  font-family: "Playfair Display", serif;
 }
-
+h2 {
+  font-family: "Playfair Display", serif;
+}
 #name {
   font-family: "Herr Von Muellerhoff", cursive;
   color: silver;
@@ -67,8 +73,10 @@ h1 {
     width: 9ch;
   }
 }
+
 .main-body {
-  background-color: rgba(233, 232, 222, 0.904);
+  /* background-color: rgba(233, 232, 222, 0.904); */
+  background-color: #f6e5e4;
 }
 .main-body {
   display: flex;
@@ -116,7 +124,7 @@ h1 {
   transition: 0.5s;
   transition-property: left;
   overflow-y: auto;
-  background: rgba(82, 42, 4, 0.473);
+  background: rgba(163, 129, 130, 0.473);
 }
 .profile_info {
   display: flex;
@@ -189,13 +197,11 @@ label #sidebar_btn:hover {
   transition: 0.5s;
   transition-property: left;
   overflow-y: auto;
-  background: rgba(82, 42, 4, 0.473);
+  background: rgba(163, 129, 130, 0.473);
 }
-/* #contact-details p {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: #fff;
-} */
+.contact h2 {
+  color: #5d4b63;
+}
 .contact-details a {
   color: #fff;
   display: block;
@@ -232,7 +238,7 @@ label #sidebar_btn:hover {
   align-self: center;
   height: 80vh;
   width: 30vw;
-  background-color: rgba(82, 42, 4, 0.473);
+  background-color: rgba(163, 129, 130, 0.473);
   transition: width 2s;
 }
 .header-hover-img:hover #description {
@@ -368,6 +374,7 @@ label #sidebar_btn:hover {
   width: 31ch;
   margin: auto;
   border-right: 4px solid rgba(255, 255, 255, 1);
+  color: #5d4b63;
 }
 
 @keyframes typing {
@@ -475,6 +482,8 @@ label #sidebar_btn:hover {
 .about-text-box h2 {
   font-size: 4rem;
   margin-bottom: 20px;
+  color: #5d4b63;
+  color: #5d4b63;
 }
 
 .about-text-box p {
@@ -482,6 +491,7 @@ label #sidebar_btn:hover {
   font-size: 1.4rem;
   padding: 0;
   margin-bottom: 1.45rem;
+  color: rgba(163, 129, 130);
 }
 
 hr {
@@ -507,16 +517,19 @@ hr {
 .title-heading {
   text-align: center;
   margin-bottom: 5rem;
+  color: rgb(163, 129, 130);
 }
 
 .title-heading h2 {
   font-size: 2rem;
   margin: 0.5rem 0 1rem 0;
+  color: #5d4b63;
 }
 
 .title-heading p {
   font-family: "Poppins", sans-serif;
   margin-bottom: 5rem;
+  margin-top: -2vh;
 }
 
 .service-tiers {
@@ -576,6 +589,7 @@ hr {
   justify-content: center;
   margin: 0 1.45rem 5rem 1.45rem;
   background-color: #cecbda;
+  border-radius: 15px;
 }
 
 .project-img {
@@ -598,7 +612,6 @@ hr {
 .project-description {
   flex: 1;
   margin-top: 0;
-  background-color: rgba(206, 203, 218, 0.5);
   padding: 10px;
 }
 .project-description:hover {
@@ -620,6 +633,7 @@ hr {
 .project-description p {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
+  margin-top: -10px;
 }
 
 .project-link {
@@ -671,6 +685,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  background-color: rgba(246, 229, 228, 0.5);
 }
 
 footer a {
@@ -679,6 +694,7 @@ footer a {
 
 .footer-coded-by {
   margin: 2rem 0;
+  color: rgb(163, 129, 130);
 }
 
 .footer-social a {
@@ -746,7 +762,8 @@ footer a {
   }
 
   .title-heading h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    color: #5d4b63;
   }
   .title-heading p {
     font-size: 1.3rem;
@@ -755,9 +772,20 @@ footer a {
   .contact .container {
     flex-direction: column;
   }
-
+  .contact {
+    background-color: #f6e5e4;
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    color: rgb(163, 129, 130);
+  }
+  .contact h2 {
+    color: #5d4b63;
+  }
   footer,
   footer p {
     font-size: 1.2rem;
   }
+}
+a {
+  color: #d74d63;
 }
