@@ -468,7 +468,7 @@ label #sidebar_btn:hover {
   height: 35rem;
   width: auto;
   border-radius: 25%;
-  margin: 10rem;
+  margin: 6rem;
   box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
 }
 
@@ -507,6 +507,14 @@ hr {
 
 /* Services */
 
+div.tier-item:nth-child(1) {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+div.tier-item:nth-child(2) {
+  margin-top: -9vh;
+}
+
 .services {
   padding: 3rem 0;
   min-height: 100vh;
@@ -516,7 +524,7 @@ hr {
 
 .title-heading {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 9rem;
   color: rgb(163, 129, 130);
 }
 
@@ -546,11 +554,15 @@ hr {
   flex-direction: column;
   justify-content: center;
   cursor: default;
+  background-color: rgba(163, 129, 130, 0.1);
+  -webkit-box-shadow: -11px 17px 48px -1px rgba(112, 87, 112, 1);
+  -moz-box-shadow: -11px 17px 48px -1px rgba(112, 87, 112, 1);
+  box-shadow: -11px 17px 48px -1px rgba(112, 87, 112, 1);
 }
 
 .tier-item i {
   font-size: 3.5rem;
-  margin-left: 6vw;
+  margin-left: 8vw;
 }
 
 .tier-item h2 {
@@ -756,6 +768,9 @@ footer a {
   .about-text-box h2 {
     font-size: 3rem;
     margin-bottom: 20px;
+  }
+  .about-text-box {
+    margin: 3rem;
   }
   .about-text-box p {
     margin: 0 0 2.45rem;
