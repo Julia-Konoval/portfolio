@@ -223,13 +223,13 @@ label #sidebar_btn:hover {
 }
 .header-hover-img p {
   color: white;
-  background: url(images/font-background.JPG) no-repeat;
+  background: url(images/hidden.jpg) no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 150px;
   text-align: center;
-  margin-top: -170px;
+  margin-top: 370px;
   font-family: "Abril Fatface", cursive;
+  font-size: 88px;
 }
 
 .header-hover-img {
@@ -239,16 +239,22 @@ label #sidebar_btn:hover {
   height: 80vh;
   width: 30vw;
   background-color: rgba(163, 129, 130, 0.473);
-  transition: width 2s;
+  transition: width 4s;
+  width: 60vw;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .header-hover-img:hover #description {
   opacity: 0.6;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -ms-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
 }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .center-con {
   display: flex;
   align-items: center;
@@ -796,6 +802,7 @@ footer a {
   .contact h2 {
     color: #5d4b63;
   }
+
   footer,
   footer p {
     font-size: 1.2rem;
