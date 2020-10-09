@@ -441,15 +441,19 @@ label #sidebar_btn:hover {
   height: 35rem;
   width: auto;
   border-radius: 25%;
-  margin: 6rem;
   box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .about-text-box {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
-  margin: 1.45rem;
+  padding: 1.45rem;
+  background-color: rgba(246, 229, 228, 0.5);
 }
 
 .about-text-box h2 {
@@ -527,10 +531,11 @@ div.tier-item:nth-child(2) {
   flex-direction: column;
   justify-content: center;
   cursor: default;
-  background-color: rgba(163, 129, 130, 0.1);
+  /* background-color: rgba(163, 129, 130, 0.1); */
   -webkit-box-shadow: -11px 17px 48px -1px rgba(112, 87, 112, 1);
   -moz-box-shadow: -11px 17px 48px -1px rgba(112, 87, 112, 1);
   box-shadow: -11px 17px 48px -1px rgba(112, 87, 112, 1);
+  background-color: rgba(246, 229, 228, 0.5);
 }
 
 .tier-item i {
@@ -750,6 +755,8 @@ footer a {
   }
   .about-text-box {
     margin: 3rem;
+    background-color: rgba(246, 229, 228, 0.5);
+    padding: 10px;
   }
   .about-text-box p {
     margin: 0 0 2.45rem;
@@ -775,7 +782,6 @@ footer a {
   .contact h2 {
     color: #5d4b63;
   }
-
   footer,
   footer p {
     font-size: 1.2rem;
